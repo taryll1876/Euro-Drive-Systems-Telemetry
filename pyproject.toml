@@ -1,0 +1,23 @@
+[project]
+name = "euroo-drive-telemetry"
+version = "0.1.0"
+description = "Euroo Drive Systems drift telemetry analyser and virtual spotter."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "arcade>=3.0",
+  "numpy>=1.24",
+  "requests>=2.31"
+]
+
+[project.optional-dependencies]
+can = ["python-can>=4.3"]
+ai = ["openai>=1.0"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+euroo-telemetry = "euroo_drive_telemetry.app:main"
+euroo-sample-data = "euroo_drive_telemetry.sample_data:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

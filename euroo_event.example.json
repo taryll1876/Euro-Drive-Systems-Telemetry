@@ -1,0 +1,27 @@
+{
+  "name": "Euroo Drive Systems Pro Test",
+  "track": "test-course",
+  "series": "FD-style",
+  "report_dir": "reports",
+  "export_dir": "exports",
+  "reference_driver": null,
+  "discord_webhook_url": null,
+  "ai_provider": "rules",
+  "scoring": {
+    "line_error_max_m": 3.0,
+    "outer_zone_min_pct": 35.0,
+    "clip_error_max_m": 2.5,
+    "min_angle_deg": 25.0,
+    "target_angle_deg": 62.0,
+    "min_throttle_pct": 45.0,
+    "target_throttle_pct": 95.0,
+    "min_transition_quality_pct": 45.0,
+    "line_points": 38.0,
+    "zone_points": 26.0,
+    "clip_points": 16.0,
+    "angle_points": 80.0,
+    "style_points": 20.0,
+    "line_angle_weight": 0.8,
+    "style_weight": 0.2
+  }
+}
